@@ -1,0 +1,91 @@
+.questions {
+    width: 100%;
+    margin: 91px 0 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__title {
+        font-size: 36px;
+        text-align: center;
+    }
+    &-wrap {
+        max-width: 1320px;
+        width: 100%;
+        height: 470px;
+        margin-top: 60px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    &__item {
+        max-width: 660px;
+        min-width: 320px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        &-wrap {
+            width: 95%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            border-bottom: 2px solid #d1d1d1;
+            &-title {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin: 15px 0;
+            }
+        }
+        &-title {
+            font-size: 24px;
+        }
+        &-button {
+            width: 25px;
+            height: 25px;
+            position: relative;
+            z-index: 10;
+            cursor: pointer;
+            transition: all .5s;
+            &-open {
+                transform: rotate(-45deg);
+                animation: open .5s ease-out;
+            }
+            &:before {
+                content: '';
+                height: 100%;
+                width: 3px;
+                display: block;
+                position: absolute;
+                left: 11px;
+                z-index: 1;
+                background-color: #67af6a;
+            }
+            &:after {
+                content: '';
+                height: 3px;
+                width: 100%;
+                display: block;
+                position: absolute;
+                top: 11px;
+                z-index: 1;
+                background-color: #67af6a;
+            }
+
+        }
+        &-text {
+            display: none;
+            margin-bottom: 15px;
+            &-open {
+                display: inline;
+            }
+        }
+    }
+}
+@keyframes open {
+    0%{
+        transform: rotate(0deg)
+    }
+    100%{
+        transform: rotate(-45deg);
+    }
+}

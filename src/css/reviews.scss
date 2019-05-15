@@ -1,0 +1,97 @@
+.reviews{
+    width: 100%;
+    height: 600px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    background-color: #67af6a;
+    &__list {
+        width: 250px;
+        margin-top: 90px;
+    }
+    &__item {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        &-show {
+            opacity: 1;
+            animation: showReview .5s ease-out;
+            transition: opacity 1s;
+        }
+        &-hide {
+            opacity: 0;
+            animation: hideReview .5s ease-out;
+            transition: opacity 1s;
+        }
+        &-show1 {
+            opacity: 1;
+            animation: showReview1 .5s ease-out;
+            transition: opacity 1s;
+        }
+        &-hide1 {
+            opacity: 0;
+            animation: hideReview1 .5s ease-out;
+            transition: opacity 1s;
+        }
+    }
+    &__btn-prev {
+        position: absolute;
+        left: 5%;
+        top: 45%;
+        cursor: pointer;
+    }
+    &__btn-next {
+        position: absolute;
+        right: 5%;
+        top: 45%;
+        cursor: pointer;
+    }
+}
+.item {
+
+    &__img {
+        width: 200px;
+        height: 200px;
+        border: 10px solid #fff;
+        border-radius: 50%;
+    }
+    &__title {
+        margin: 37px 0;
+        font-size: 36px;
+    }
+}
+@keyframes hideReview {
+    0%{
+        transform: translateX(0px);
+    }
+    100%{
+        transform: translateX(-500px);
+    }
+}
+@keyframes showReview {
+    0%{
+        transform: translateX(500px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}
+@keyframes hideReview1 {
+    0%{
+        transform: translateX(0px);
+    }
+    100%{
+        transform: translateX(500px);
+    }
+}
+@keyframes showReview1 {
+    0%{
+        transform: translateX(-500px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}

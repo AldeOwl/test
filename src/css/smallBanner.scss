@@ -1,0 +1,34 @@
+.small-banner__wrap {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.small-banner {
+    width: 100%;
+    max-width: 1320px;
+    height: 324px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    background-color: #67af6a;
+    &__title {
+        margin-bottom: 40px;
+        font-size: 30px;
+        color: #fff;
+    }
+    &__button {
+        width: 240px;
+        height: 48px;
+        font-size: 18px;
+        color: #357852;
+        font-weight: 500;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        border-radius: 8px;
+        background-color: #ffffff;
+    }
+}
