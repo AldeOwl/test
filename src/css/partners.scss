@@ -1,4 +1,22 @@
 .partners {
     width: 100%;
     padding: 85px 60px 50px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    @media screen and (max-width:749px){
+        padding: 20px;
+        justify-content: center;
+    }
+    &__wrap-logo {
+        width: 300px;
+        margin-bottom: 20px;
+
+    }
+    &__logo {
+        width: 100%;
+        height: auto;
+    }
 }

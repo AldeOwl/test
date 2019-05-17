@@ -4,6 +4,9 @@
     text-align: center;
     &__title {
         font-size: 36px;
+        @media screen and (max-width: 520px){
+            font-size: 18px;
+        }
     }
 }
 .container {
@@ -13,10 +16,9 @@
     justify-content: center;
 }
 .content-box {
-    width: 425px;
-    height: 256px;
+    width: 390px;
     margin: 0 23px 23px 0;
-    padding: 0 0 0 24px;
+    padding: 24px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -24,7 +26,49 @@
     text-align: start;
     border: 1px solid #d1d1d1;
     border-radius: 8px;
+    @media screen and (max-width: 950px){
+        width: 300px;
+    }
+    @media screen and (max-width: 750px){
+        width: 200px;
+        padding: 12px;
+    }
+    @media screen and (max-width: 520px){
+        width: 100%;
+        margin: 0 11px 23px 11px
+    }
+    &__wrap-img {
+        width: auto;
+        height: 76px;
+        margin-bottom: 10px;
+        @media screen and (max-width: 750px){
+            height: 50px;
+        }
+        @media screen and (max-width: 520px){
+            height: 30px;
+        }
+    }
+    &__img {
+        height: 100%;
+        width: auto;
+    }
+   
     &__title {
         margin: 10px 0;
+        @media screen and (max-width: 750px){
+            font-size: 18px;
+        }
+        @media screen and (max-width: 520px){
+            font-size: 16px;
+        }
     }
+    &__text {
+        @media screen and (max-width: 750px){
+            font-size: 14px;
+        }
+        @media screen and (max-width: 520px){
+            font-size: 12px;
+        }
+    }
+
 }

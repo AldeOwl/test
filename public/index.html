@@ -19,34 +19,30 @@
             <img src="./images/лого.png" alt="Vool">
         </div>
         <div class="menu">
+            <div class="mobile-menu-btn">
+                <div class="mobile-menu__btn-one"></div>
+                <div class="mobile-menu__btn-two"></div>
+                <div class="mobile-menu__btn-three"></div>
+                <div class="mobile-menu__btn-four"></div>
+            </div>
             <nav class="menu__item">
                 <a class="menu__item-link" id="polis">Оформить ОСАГО</a>
-            </nav>
-            <nav class="menu__item">
                 <a id="partners" class="menu__item-link">Партнёры</a>
-            </nav>
-            <nav class="menu__item">
                 <a id="whyUs" class="menu__item-link">Преимущества</a>
-            </nav>
-            <nav class="menu__item">
                 <a id="reviews" class="menu__item-link">Отзывы</a>
-            </nav>
-            <nav class="menu__item">
                 <a id="questions" class="menu__item-link">Вопрос/ответ</a>
             </nav>
         </div>
+    </header>
         <div class="mobile-menu">
-            <div class="mobile-menu__btn">
-                <div class="mobile-menu__item mobile-menu__item_first"></div>
-                <div class="mobile-menu__item mobile-menu__item_second"></div>
-                <div class="mobile-menu__item mobile-menu__item_third "></div>
-                <div class="mobile-menu__profile"></div>
-                <div class="mobile-menu__works"></div>
-                <div class="mobile-menu__skills"></div>
-                <div class="mobile-menu__git"></div>
-            </div>
-        </div>
-    </header>    <div class="wrap">
+            <nav class="mobile-menu__item">
+                <a class="mobile-menu__item-link" id="polis">Оформить ОСАГО</a>
+                <a id="partners" class="mobile-menu__item-link">Партнёры</a>
+                <a id="whyUs" class="mobile-menu__item-link">Преимущества</a>
+                <a id="reviews" class="mobile-menu__item-link">Отзывы</a>
+                <a id="questions" class="mobile-menu__item-link">Вопрос/ответ</a>
+            </nav>
+        </div>    <div class="wrap">
         <div class="banner">
             <div class="banner__img-wrap">
                 <img class="banner__img" src="./images/Векторный_смарт-объект.png" alt="">
@@ -57,59 +53,53 @@
         наиболее интересное предложение
         от страховых компаний</p>
             </div>
-        </div>        <div class="polis">
-            <h1 class="polis__title">Оформление полиса ОСАГО</h1>
-            <div class="polis-wrap">
-                <div class="progress-bar">
-                    <div class="progress-bar__item progress-bar__item-active">
-                        Шаг 1. Автомобиль
-                    </div>
-                    <div class="progress-bar__item">
-                        Шаг 2. Страхователь
-                    </div>
-                    <div class="progress-bar__item">
-                        Шаг 3. Водители 
-                    </div>
-                    <div class="progress-bar__item">
-                        Шаг 4. Оплата
-                    </div>
-                </div>
-            </div>
         </div>        <div class="why-us">
             <h1 class="why-us__title">Почему мы?</h1>
             <div class="container">
                 <div class="content-box">
-                    <img class="content-box__img" src="./images/1.png"/>
+                    <div class="content-box__wrap-img">
+                        <img class="content-box__img" src="./images/1.png"/>
+                    </div>
                     <h2 class="content-box__title">Быстро</h2>
                     <p class="content-box__text">Оформите полис за 10 минут <br>
         Без посещения офиса</p>
                 </div>
                 <div class="content-box">
-                    <img class="content-box__img" src="./images/2_1.png"/>
+                    <div class="content-box__wrap-img">
+                        <img class="content-box__img" src="./images/2_1.png"/>
+                    </div>
                     <h2 class="content-box__title">Выгодно</h2>
                     <p class="content-box__text">Выберите лучшую стоимость <br>
         Вашего полиса</p>
                 </div>
                 <div class="content-box">
-                    <img class="content-box__img" src="./images/17-layers.png"/>
+                    <div class="content-box__wrap-img">
+                        <img class="content-box__img" src="./images/17-layers.png"/>
+                    </div>
                     <h2 class="content-box__title">Удобно</h2>
                     <p class="content-box__text">Одна заявка сразу в несколько <br>
         страховых компаний</p>
                 </div>
                 <div class="content-box">
-                    <img class="content-box__img" src="./images/4.png"/>
+                    <div class="content-box__wrap-img">
+                        <img class="content-box__img" src="./images/4.png"/>
+                    </div>
                     <h2 class="content-box__title">Надежно</h2>
                     <p class="content-box__text">Ваш полис после оплаты придет к Вам на почту, сохраните его 
         в доступном месте</p>
                 </div>
                 <div class="content-box">
-                    <img class="content-box__img" src="./images/5.png"/>
+                    <div class="content-box__wrap-img">
+                        <img class="content-box__img" src="./images/5.png"/>
+                    </div>
                     <h2 class="content-box__title">Важно</h2>
                     <p class="content-box__text">Вы приобретаете полис с учетом езды
         без аварий и с сохранением КБМ</p>
                 </div>
                 <div class="content-box">
-                    <img class="content-box__img" src="./images/6.png"/>
+                    <div class="content-box__wrap-img">
+                        <img class="content-box__img" src="./images/6.png"/>
+                    </div>
                     <h2 class="content-box__title">Гарантировано</h2>
                     <p class="content-box__text">Только проверенные страховые
         компании</p>
@@ -125,17 +115,81 @@
             <div class="reviews__list">
                 <div class="reviews__item reviews__item-show">
                     <img class="item__img" />
-                    <h1 class="item__title">Иванов Иван</h1>
-                    <p class="item__text">Текст для отзыва 1</p>
+                    <h1 class="item__title">Николай, 45 лет, <br> Барнаул</h1>
+                    <p class="item__text">Раньше на поиск и покупку полиса тратил больше недели: сначала в интернете смотрел, какие условия в разных компаниях, заводил таблицу специальную с ценами, чтобы сравнить. Потом ехал к страховую с лучшими условиями, ждал в очередях иногда. Теперь покупаю онлайн, сравниваю за пять минут условия и оформляю не выходя из дома.</p>
                 </div>
                 <div class="reviews__item reviews__item-hide">
                     <img class="item__img" />
-                    <h1 class="item__title">Иванов Иван</h1>
-                    <p class="item__text">Текст для отзыва 2</p>
+                    <h1 class="item__title">Анна, 29 лет, <br> Хабаровск</h1>
+                    <p class="item__text">Открыла для себя сервис “Вул” в этом году. Очень рада, что и в сфере ОСАГО все процессы переходят в Интернет. Удобно и быстро всё.</p>
+                </div>
+                <div class="reviews__item reviews__item-hide">
+                    <img class="item__img" />
+                    <h1 class="item__title">Илья, 37 лет, <br> Белореченск</h1>
+                    <p class="item__text">В небольшом городе выбор страховых маленький. Благодаря vool.ru можно купить полис в интернете, выбрать страховую где выгоднее. Просто отлично, что теперь всё можно решить онлайн.</p>
+                </div>
+                <div class="reviews__item reviews__item-hide">
+                    <img class="item__img" />
+                    <h1 class="item__title">Мария, 31 год, <br> Новосибирск</h1>
+                    <p class="item__text">Покупка полиса онлайн - отличная возможность сэкономить время. Больше не приходится ехать в страховую лично, я не привязана к их часам работы, не жду своей очереди и т.п. Спасибо за такой сервис!</p>
+                </div>
+                <div class="reviews__item reviews__item-hide">
+                    <img class="item__img" />
+                    <h1 class="item__title">Станислав, 42 года, <br> Тюмень</h1>
+                    <p class="item__text">Уже второй год оформляю полис ОСАГО через интернет. За это время порекомендовал сервис многим знакомым. Каждому, кто ценит свое время и деньги, давно пора перестать ездить в офисы страховых, а делать всё в интернете! </p>
                 </div>
             </div>
         </div>        <div class="partners">
-            <img class="partners__logo" src="../images/партнёры_копия.png" alt="">
+            <div class="partners__wrap-logo">
+                <img class="partners__logo" src="./images/rosgosstrahBw.png" alt="">
+            </div>
+            <div class="partners__wrap-logo">
+                <img class="partners__logo" src="./images/vskBw.png" alt="">
+            </div>
+            <div class="partners__wrap-logo">
+                <img class="partners__logo" src="./images/ingosBw.png" alt="">
+            </div>
+            <div class="partners__wrap-logo">
+                <img class="partners__logo" src="./images/naskoBw.png" alt="">
+            </div>
+            <div class="partners__wrap-logo">
+                <img class="partners__logo" src="./images/renesansBw.png" alt="">
+            </div>
+            <div class="partners__wrap-logo">
+                <img class="partners__logo" src="./images/alfaBw.png" alt="">
+            </div>
+            <div class="partners__wrap-logo">
+                <img class="partners__logo" src="./images/soglasieBw.png" alt="">
+            </div>
+            <div class="partners__wrap-logo">
+                <img class="partners__logo" src="./images/tinkoffBw.png" alt="">
+            </div>
+        </div>        <div class="main-text">
+            <div class="main-text__wrap">
+                <h1 class="main-text__title">
+                    Полис ОСАГО любом регионе за 10 минут! 
+                </h1>
+                <p class="main-text__text">На нашей платформе можно буквально за пару кликов рассчитать стоимость полиса, сравнить цены в разных страховых и оформить ОСАГО.  </p>
+            </div>
+            <div class="main-text__wrap">
+                <h1 class="main-text__title">
+                    Как рассчитывается стоимость полиса?
+                </h1>
+                <p class="main-text__text">Цена полиса рассчитывается в специальном калькуляторе и зависит от многих факторов: информация о ТС и его владельце, регион, тарифы конкретной страховой компании. 
+        Оформляя полис ОСАГО через наш сервис, вы можете сэкономить до 3980 рублей, поскольку базовая ставка на платформе отличается (разница до 20%).</p>
+            </div>
+            <div class="main-text__wrap">
+                <h1 class="main-text__title">
+                    Оформление ОСАГО онлайн - это безопасно
+                </h1>
+                <p class="main-text__text">Полис е-ОСАГО соответствует закону так же, как и привычный “бумажный” полис. При покупке ОСАГО через интернет номер полиса вносится в единую базу, доступ к которой есть у любого инспектора ГИБДД. Достаточно предъявить инспектору распечатанную версию полиса - он легко сможет проверить её по номеру.</p>
+            </div>
+            <div class="main-text__wrap">
+                <h1 class="main-text__title">
+                   Покупка полиса онлайн экономит ваше время
+                </h1>
+                <p class="main-text__text">Наша платформа объединяет информацию о множестве страховых компаний. Вам больше не нужно заходить на сайт каждой СК по отдельности, вводить данные и сравнивать цены. Предоставьте всю информацию только один раз и узнайте условия в десятках страховых!</p>
+            </div>
         </div>        <div class="small-banner__wrap">
             <div class="small-banner">
                 <h1 class="small-banner__title">Оформить ОСАГО</h1>
@@ -147,283 +201,129 @@
                  <div class="questions__item">
                     <div class="questions__item-wrap">
                         <div class="questions__item-wrap-title">
-                            <h1 class="questions__item-title">Вопрос №1</h1>
+                            <h1 class="questions__item-title">Как можно проверить подлинность электронного полиса ОСАГО?</h1>
                             <div data-id="0" class="questions__item-button">
                             </div>
                         </div>
                     <p class="questions__item-text"
                         data-id="0"
-                    >Развернутый ответ на вопрос №1 в несколько строчек</p>
+                    >Подлинность полиса ОСАГО можно проверить на сайте РСА (Российского союза страховщиков): <br>
+                    <a href="https://dkbm-web.autoins.ru/dkbm-web-1.0/bsostate.htm">https://dkbm-web.autoins.ru/dkbm-web-1.0/bsostate.htm</a>
+                     </p>
                     </div>
                 </div>
                  <div class="questions__item">
                     <div class="questions__item-wrap">
                         <div class="questions__item-wrap-title">
-                            <h1 class="questions__item-title">Вопрос №2</h1>
+                            <h1 class="questions__item-title">Электронный полис ОСАГО стоит дороже или дешевле «бумажного»?</h1>
                             <div data-id="1" class="questions__item-button">
                             </div>
                         </div>
-                    <p data-id="1" class="questions__item-text"></p>
+                    <p data-id="1" class="questions__item-text">
+                        Тарифы, применяемые при заключении договора ОСАГО в электронном виде, не отличаются от тарифов, применяемых при оформлении бумажных полисов в офисе страховой компании или у агента. Если стоимость полиса различалась, возможно, при расчете были указаны разные данные.
+                    </p>
                     </div>
                 </div>
                  <div class="questions__item">
                     <div class="questions__item-wrap">
                         <div class="questions__item-wrap-title">
-                            <h1 class="questions__item-title">Вопрос №3</h1>
+                            <h1 class="questions__item-title">Какие плюсы онлайн-покупки страхового полиса на сайте – vool.ru</h1>
                             <div data-id="2" class="questions__item-button">
                             </div>
                         </div>
-                    <p data-id="2" class="questions__item-text"></p>
+                    <p data-id="2" class="questions__item-text">
+                        Главный плюс — сэкономленное время. Чтобы сравнить цены у нескольких страховых вам необходимо на каждом сайте заполнить форму. В каждой форме около 40 вопросов. У нас вы это сделаете один раз и получите расчет по нескольким компаниям.
+                    </p>
                     </div>
                 </div>
                  <div class="questions__item">
                     <div class="questions__item-wrap">
                         <div class="questions__item-wrap-title">
-                            <h1 class="questions__item-title">Вопрос №4</h1>
+                            <h1 class="questions__item-title">Нужна ли диагностическая карта (техосмотр, ТО) для оформления электронного ОСАГО?</h1>
                             <div data-id="3" class="questions__item-button">
                             </div>
                         </div>
-                    <p data-id="3" class="questions__item-text"></p>
+                    <p data-id="3" class="questions__item-text">
+                        Диагностическая карта требуется для легковых  транспортных средств, не используемых в качестве такси, старше 3 лет. Если ваше транспортное средство старше трех лет и у вас нет действующей на дату заключения договора  диагностической карты, то для заключения договора ОСАГО сначала необходимо пройти техосмотр. Обращаем внимание на то, что три года исчисляются с 1 января года изготовления транспортного средства вне зависимости от даты его покупки или даты выдачи ПТС.
+                    </p>
                     </div>
                 </div>
                  <div class="questions__item">
                     <div class="questions__item-wrap">
                         <div class="questions__item-wrap-title">
-                            <h1 class="questions__item-title">Вопрос №5</h1>
+                            <h1 class="questions__item-title">Что такое бонус-малус КБМ, и как рассчитывается скидка за безаварийное вождение при оформлении полиса ОСАГО</h1>
                             <div data-id="4" class="questions__item-button">
                             </div>
                         </div>
-                    <p data-id="4" class="questions__item-text"></p>
+                    <p data-id="4" class="questions__item-text">
+                        При оформлении полиса ОСАГО (в любом виде) применяется коэффициент, соответствующий страховой истории, содержащейся в автоматизированной информационной системе РСА (Российского союза автостраховщиков). Поэтому скидки за безаварийное вождение (если информация о них содержится в РСА), будут применены. Соответственно, информация о новом договоре ОСАГО, заключенном в электронном виде, будет также передана в РСА.
+                    </p>
                     </div>
                 </div>
                  <div class="questions__item">
                     <div class="questions__item-wrap">
                         <div class="questions__item-wrap-title">
-                            <h1 class="questions__item-title">Вопрос №6</h1>
+                            <h1 class="questions__item-title">Нужно ли показывать сотруднику ГИБДД электронный полис?</h1>
                             <div data-id="5" class="questions__item-button">
                             </div>
                         </div>
-                    <p data-id="5" class="questions__item-text"></p>
+                    <p data-id="5" class="questions__item-text">
+                        В настоящий момент мы настоятельно рекомендуем распечатать полученный на email электронный полис и список законных оснований для страхования в электронной форме и всегда иметь эти документы при себе в момент управления автомобилем!
+        Наряды ДПС могут проверять онлайн наличие электронного полиса ОСАГО через сеть ИМТС МВД России или сайт РСА. При наличии в информационной системе сведений о заключении такого договора они обязаны исключить привлечение водителя к административной ответственности по части 2 статьи 12.3 КоАП РФ*
+        *Согласно письму ГУОБДД МВД России от 03.07.2015 № 13/12-у-4440 Начальнику ЦСН БДД МВД России, начальникам подразделений ГАИ на региональном уровне «Об изменениях в законодательстве Российской Федерации».
+                    </p>
                     </div>
                 </div>
                 <div class="questions__item">
                     <div class="questions__item-wrap">
                         <div class="questions__item-wrap-title">
-                            <h1 class="questions__item-title">Вопрос №7</h1>
+                            <h1 class="questions__item-title">Как получить оригинал полиса, купленного через интернет?</h1>
                             <div data-id="6" class="questions__item-button">
                             </div>
                         </div>
-                    <p data-id="6" class="questions__item-text"></p>
+                    <p data-id="6" class="questions__item-text">
+                        С помощью страховой компании, на сайте которой вы произвели покупку, обратившись к ним по телефону (чтобы узнать в каком офисе можно получить).
+                    </p>
                     </div>
                 </div>
                  <div class="questions__item">
                     <div class="questions__item-wrap">
                         <div class="questions__item-wrap-title">
-                            <h1 class="questions__item-title">Вопрос №8</h1>
+                            <h1 class="questions__item-title">Если я купил страховой полис сегодня, когда я могу им воспользоваться?</h1>
                             <div data-id="7" class="questions__item-button">
                             </div>
                         </div>
-                    <p data-id="7" class="questions__item-text"></p>
+                    <p data-id="7" class="questions__item-text">
+                        Полис ОСАГО можно купить, только если вы укажете начало его действия не ранее завтрашнего дня.
+                    </p>
                     </div>
                 </div>
                <div class="questions__item">
                     <div class="questions__item-wrap">
                         <div class="questions__item-wrap-title">
-                            <h1 class="questions__item-title">Вопрос №9</h1>
+                            <h1 class="questions__item-title">Что такое европротокол?</h1>
                             <div data-id="8" class="questions__item-button">
                             </div>
                         </div>
-                    <p data-id="8" class="questions__item-text"></p>
+                    <p data-id="8" class="questions__item-text">
+                        Европротокол — это извещение о ДТП, которое самостоятельно оформляется участниками ДТП для обозначения факта происшествия и не требует присутствия на месте ДТП сотрудников ГИБДД. При этом должны быть соблюдены следующие условия: в столкновении должны участвовать два автомобиля (при этом вред был нанесен только имуществу, а не жизни и здоровью участников ДТП), водители застрахованы по ОСАГО и имеют при себе полис, сумма ущерба по оценке участников ДТП составляет не более 50 000 рублей и у них нет разногласий в обстоятельствах происшествия.
+                    </p>
                     </div>
                 </div>
                <div class="questions__item">
                     <div class="questions__item-wrap">
                         <div class="questions__item-wrap-title">
-                            <h1 class="questions__item-title">Вопрос №10</h1>
+                            <h1 class="questions__item-title">Чем грозит отсутствие полиса у водителя?</h1>
                             <div data-id="9" class="questions__item-button">
                             </div>
                         </div>
-                    <p data-id="9" class="questions__item-text"></p>
-                    </div>
-                </div>
-            </div>
-        </div>        <div class="footer">
-            
-        </div>    </div>
-    <div class="wrap">
-        <div class="banner">
-            <div class="banner__img-wrap">
-                <img class="banner__img" src="./images/Векторный_смарт-объект.png" alt="">
-            </div>
-            <div class="banner__title-wrap">
-                <h1 class="banner__title">Оформить полис ОСАГО за 10 минут</h1>
-                <p class="banner__text">Сравните стоимость полиса и выберете
-        наиболее интересное предложение
-        от страховых компаний</p>
-            </div>
-        </div>        <div class="results">
-            <h1 class="results__title">Результаты расчета</h1>
-            <div class="results-wrap">
-                <div class="table">
-                    <div class="table__title">
-                        <div class="table__title-company">
-                            Компания
-                        </div>
-                        <div class="table__title-reiting">
-                            Рейтинг
-                        </div>
-                        <div class="table__title-office">
-                            Офисы урегулирования
-                        </div>
-                        <div class="table__title-price">
-                            Стоимость
-                        </div>
-                        <div class="table__title-empty">
-                        </div>
-                    </div>
-                    <div class="table__row">
-                        <div class="table__row-logo">
-                            <img src="./images/вск_лого.png"/>
-                        </div>
-                        <div class="table__row-reiting">
-                            RRaa+
-                        </div>
-                        <div class="table__row-office">
-                            RRaa+
-                        </div>
-                        <div class="table__row-price">
-                            <span >3000p</span>
-                            <span class="disable">Расчет недоступен</span>
-                        </div>
-                        <div class="table__row-btn">
-                            <button class="row-btn">оплатить</button>
-                        </div>
-                    </div>
-                    <div class="table__row">
-                        <div class="table__row-logo">
-                            <img src="./images/ингосстрах.png"/>
-                        </div>
-                        <div class="table__row-reiting">
-                            RRaa+
-                        </div>
-                        <div class="table__row-office">
-                            RRaa+
-                        </div>
-                        <div class="table__row-price">
-                            <span>3000p</span>
-                            <span class="disable">Расчет недоступен</span>
-                        </div>
-                        <div class="table__row-btn">
-                            <button class="row-btn">оплатить</button>
-                        </div>
-                    </div>
-                    <div class="table__row">
-                        <div class="table__row-logo">
-                            <img src="./images/наско_лого.png"/>
-                        </div>
-                        <div class="table__row-reiting">
-                            RRaa+
-                        </div>
-                        <div class="table__row-office">
-                            RRaa+
-                        </div>
-                        <div class="table__row-price">
-                            <span>3000p</span>
-                            <span class="disable">Расчет недоступен</span>
-                        </div>
-                        <div class="table__row-btn">
-                            <button class="row-btn">оплатить</button>
-                        </div>
-                    </div>
-                    <div class="table__row table__row-disable">
-                        <div class="table__row-logo">
-                            <img src="./images/росгострах_лого.png"/>
-                        </div>
-                        <div class="table__row-reiting">
-                            RRaa+
-                        </div>
-                        <div class="table__row-office">
-                            RRaa+
-                        </div>
-                        <div class="table__row-price">
-                            <span class="disable">3000p</span>
-                            <span class="disable-text">Расчет недоступен</span>
-                        </div>
-                        <div class="table__row-btn">
-                            <button class="row-btn">оплатить</button>
-                        </div>
-                    </div>
-                    <div class="table__row table__row-disable">
-                        <div class="table__row-logo">
-                            <img src="./images/альфа_страхование_лого.png"/>
-                        </div>
-                        <div class="table__row-reiting">
-                            RRaa+
-                        </div>
-                        <div class="table__row-office">
-                            RRaa+
-                        </div>
-                        <div class="table__row-price">
-                            <span class="disable">3000p</span>
-                            <span class="disable-text">Расчет недоступен</span>
-                        </div>
-                        <div class="table__row-btn">
-                            <button class="row-btn">оплатить</button>
-                        </div>
-                    </div>
-                    <div class="table__row table__row-disable">
-                        <div class="table__row-logo">
-                            <img src="./images/ренессанс_лого.png"/>
-                        </div>
-                        <div class="table__row-reiting">
-                            RRaa+
-                        </div>
-                        <div class="table__row-office">
-                            RRaa+
-                        </div>
-                        <div class="table__row-price">
-                            <span class="disable">3000p</span>
-                            <span class="disable-text">Расчет недоступен</span>
-                        </div>
-                        <div class="table__row-btn">
-                            <button class="row-btn">оплатить</button>
-                        </div>
-                    </div>
-                    <div class="table__row table__row-disable">
-                        <div class="table__row-logo">
-                            <img src="./images/согласие_лого.png"/>
-                        </div>
-                        <div class="table__row-reiting">
-                            RRaa+
-                        </div>
-                        <div class="table__row-office">
-                            RRaa+
-                        </div>
-                        <div class="table__row-price">
-                            <span class="disable">3000p</span>
-                            <span class="disable-text">Расчет недоступен</span>
-                        </div>
-                        <div class="table__row-btn">
-                            <button class="row-btn">оплатить</button>
-                        </div>
-                    </div>
-                    <div class="table__row table__row-disable">
-                        <div class="table__row-logo">
-                            <img src="./images/тинькофф_лого.png"/>
-                        </div>
-                        <div class="table__row-reiting">
-                            RRaa+
-                        </div>
-                        <div class="table__row-office">
-                            RRaa+
-                        </div>
-                        <div class="table__row-price">
-                            <span class="disable">3000p</span>
-                            <span class="disable-text">Расчет недоступен</span>
-                        </div>
-                        <div class="table__row-btn">
-                            <button class="row-btn">оплатить</button>
-                        </div>
+                    <p data-id="9" class="questions__item-text">
+                        Согласно ч. 2 ст. 12.3, ч. 1, 2 ст. 12.37 КоАП РФ в настоящее время предусмотрены следующие виды административной ответственности, связанные с отсутствием полиса ОСАГО:
+        
+        1) административный штраф в размере 500 руб., если автомобилем управляет водитель, не вписанный в полис ОСАГО;
+        
+        2) административный штраф в размере 800 руб., если не застрахована гражданская ответственность водителя
+                    </p>
                     </div>
                 </div>
             </div>

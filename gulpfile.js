@@ -113,7 +113,7 @@ gulp.task('css', () => {
             loadPaths: ['src/images/'],
           }),
         postcssShort,
-        postcssPresetEnv({ stage: 3 }),
+        // postcssPresetEnv({ stage: 3 }),
         autoprefixer({ browsers: ['last 2 version'] })
     ];
     return gulp.src(paths.src.styles)

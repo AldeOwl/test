@@ -1,15 +1,18 @@
 .header {
     max-width: 1440px;
     min-width: 320px;
-    margin: auto;
+    margin: 0 auto;
     height: 70px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px;
     box-sizing: border-box;
+    background-color: #fff;
+    position: relative;
+    z-index: 5;
     @media screen and (max-width:799px){
-        justify-content: center;
+        
     }
 }
 .logo {
@@ -21,18 +24,25 @@
     }
 }
 .menu {
-    width: 60%;
+    width: 70%;
     display: flex;
     justify-content: space-around;
-    @media screen and (max-width:799px){
-        display: none;
+    @media screen and (max-width:990px){
+        justify-content: flex-end;
     }
     &__item {
-        
+        width: 100%;
+        height: 24px;
+        display: flex;
+        justify-content: space-between;
+        @media screen and (max-width:990px){
+            display: none;
+        }
         &-link {
             font-size: 18px;
             text-decoration: none;
             font-weight: 400;
+            white-space: nowrap;
             cursor: pointer;
             &:hover {
                 border-bottom: 2px solid  #67af6a;
@@ -40,216 +50,86 @@
         }
     }
 }
-.mobile-menu {
-    width: 70px;
-    height: 70px;
-    border-radius: 50%;
-    background-color: #FFC700;
-    display: none;
-    position: fixed;
-    bottom: 1%;
-    left: 40%;
-    z-index: 100;
-    justify-content: center;
-    align-items: center;
-    @media screen and (max-width:799px){
+.mobile-menu-btn {
+    width: 38px;
+    height: 38px;
+    @media screen and (max-width:990px){
         display: flex;
-    }
-    &__profile{
-        display: none;
-        width: 50px;
-        height: 50px;
-        border-radius: 50%;
-        background-color: #FFC700;
-        position: absolute;
-        bottom: -129%;
-        left: -300%;
-        background-image: url(../images/user.svg);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: 20px;
-        animation: showProfile .5s ease-out;
-    }
-    &__works{
-        display: none;
-        width: 50px;
-        height: 50px;
-        border-radius: 50%;
-        background-color: #FFC700;
-        position: absolute;
-        bottom: 130%;
-        left: -250%;
-        background-image: url(../images/briefcase.svg);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: 20px;
-        animation: showWorks .5s ease-out;
-    }
-    &__skills{
-        display: none;
-        width: 50px;
-        height: 50px;
-        border-radius: 50%;
-        background-color: #FFC700;
-        position: absolute;
-        bottom: 310%;
-        left: -140%;
-        background-image: url(../images/list.svg);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: 20px;
-        animation: showSkills .5s ease-out;
-    }
-    &__git{
-        display: none;
-        width: 50px;
-        height: 50px;
-        border-radius: 50%;
-        background-color: #FFC700;
-        position: absolute;
-        bottom: 360%;
-        left: 0%;
-        background-image: url(../images/gitmobile.svg);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: 20px;
-        animation: showGit .5s ease-out;
-    }
-    &__linkid{
-        display: none;
-        width: 50px;
-        height: 50px;
-        border-radius: 50%;
-        background-color: #FFC700;
-        position: absolute;
-        bottom: 310%;
-        left: 140%;
-        background-image: url(../images/LinkedInmobile.svg);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: 20px;
-        animation: showLinkid .5s ease-out;
-    }
-    &__mail{
-        display: none;
-        width: 50px;
-        height: 50px;
-        border-radius: 50%;
-        background-color: #FFC700;
-        position: absolute;
-        bottom: 130%;
-        left: 250%;
-        background-image: url(../images/mail.svg);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: 20px;
-        animation: showMail .5s ease-out;
-    }
-    &__phone{
-        display: none;
-        width: 50px;
-        height: 50px;
-        border-radius: 50%;
-        background-color: #FFC700;
-        position: absolute;
-        bottom: -129%;
-        left: 300%;
-        background-image: url(../images/telephone.svg);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: 20px;
-        animation: showPhone .5s ease-out;
-    }
-    &__active {
-        display: block;
+        flex-wrap: wrap;
     }
 }
+.mobile-menu {
+    &__btn-one {
+        width: 17px;
+        height: 17px;
+        margin: 0 4px 4px 0;
+        border-radius: 4px;
+        background-color: #357852;
+    }
+    &__btn-two {
+        width: 17px;
+        height: 17px;
+        margin: 0 0 4px 0;
+        border-radius: 4px;
+        background-color: #67af6a;
+    }
+    &__btn-three {
+        width: 17px;
+        height: 17px;
+        margin: 0 4px 0 0;
+        border-radius: 4px;
+        background-color: #489f85;
+    }
+    &__btn-four {
+        width: 17px;
+        height: 17px;
+        border-radius: 4px;
+        background-color: #9dcc8f;
+    }
+}
+.mobile-menu {
 
-.mobile-menu__btn {
-    width: 40px;
-    height: 20px;
-    position: relative;
-    cursor: pointer;
-}
-.mobile-menu__item {
-    display: block;
-    position: absolute;
-    height: 3px;
-    width: 100%;
-    background: #ffffff;
-    border-radius: 4px;
-    transition: .5s;
-    &-active {
-        transform: rotate(45deg);
-        top: 10px;
+    &__item {
+        width: 100%;
+        height: 24px;
+        display: flex;
+        justify-content: space-between;
+        @media screen and (max-width:990px){
+            animation: showMenu 1s ease-out;
+            height: auto;
+            position: absolute;
+            top: 70px;
+            right: 0;
+            z-index: 1;
+            flex-direction: column;
+            align-items: flex-end;
+        }
+        
+        &-link {
+            font-size: 18px;
+            text-decoration: none;
+            font-weight: 400;
+            white-space: nowrap;
+            cursor: pointer;
+            &:hover {
+                border-bottom: 2px solid  #67af6a;
+            }
+            @media screen and (max-width:990px){
+                width: 100%;
+                text-align: center;
+                line-height: 30px;
+                background-color: #fff;
+                
+            }
+        }
     }
+
 }
-.mobile-menu__item_second {
-    top: 10px;
-    &-active {
-        height: 0;
-    }
-}
-.mobile-menu__item_third {
-    top: 20px;
-    &-active {
-        transform: rotate(-45deg);
-        top: 10px;
-    }
-}
-@keyframes showProfile {
+@keyframes showMenu {
     0%{
-        transform: translateX(50px);
+        transform: translateY(-400px);
     }
     100%{
-        transform: translateX(0px);
-    }
-}
-@keyframes showWorks {
-    0%{
-        transform: translateY(50px) translateX(50px);
-    }
-    100%{
-        transform: translateX(0px);
-    }
-}
-@keyframes showSkills {
-    0%{
-        transform: translateY(80px) translateX(60px);
-    }
-    100%{
-        transform: translateX(0px);
-    }
-}
-@keyframes showGit {
-    0%{
-        transform: translateY(80px);
-    }
-    100%{
-        transform: translateX(0px);
-    }
-}
-@keyframes showLinkid {
-    0%{
-        transform: translateY(80px) translateX(-60px);
-    }
-    100%{
-        transform: translateX(0px);
-    }
-}
-@keyframes showMail {
-    0%{
-        transform: translateY(50px) translateX(-50px);
-    }
-    100%{
-        transform: translateX(0px);
-    }
-}
-@keyframes showPhone {
-    0%{
-        transform: translateX(-50px);
-    }
-    100%{
-        transform: translateX(0px);
+        transform: translateY(0px);
     }
 }
